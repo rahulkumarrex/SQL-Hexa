@@ -58,11 +58,9 @@ values
   -- CRUD Operation on Billing table.  
 
   create table Billing ( bill_id int primary key, patient_id int, 
-doctor_id int, appointment_id int, bill_date date, amount decimal(10, 
-2), payment_status varchar(20), foreign key(patient_id) 
-references Patients(patient_id), foreign key (doctor_id) references 
-Doctors(doctor_id), foreign key (appointment_id) references 
-Appointments(appointment_id));
+doctor_id int, appointment_id int, bill_date date, amount decimal(10,2), payment_status varchar(20), 
+foreign key(patient_id) references Patients(patient_id), foreign key (doctor_id) references Doctors(doctor_id),
+foreign key (appointment_id) references Appointments(appointment_id));
 
   insert into Billing (bill_id, patient_id, doctor_id, appointment_id, bill_date, amount, payment_status)
 values
