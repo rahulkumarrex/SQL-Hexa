@@ -22,7 +22,8 @@ VALUES
     
     -- Leash Table
     
-    create table Lease(leaseID int primary key, vehicleID int , customerID int,startDate date,endDate Date,type varchar(20), foreign key(vehicleID) References vehicle(vehicleID),    
+    create table Lease(leaseID int primary key, vehicleID int , customerID int,startDate date,endDate Date,type varchar(20), 
+    foreign key(vehicleID) References vehicle(vehicleID),    
     foreign key (customerID) references customer(customerID));
     
     insert into Lease (leaseID, vehicleID, customerID, startDate, endDate, type)
