@@ -1,6 +1,4 @@
 use hexa;
-
-use hexa;
 -- CRUD Operation on table Patients.
 create table Patient(patient_id int primary key, first_name varchar(50), last_name varchar(50), date_of_birth date,gender varchar(10), 
 contact_number varchar(15),address varchar(100));
